@@ -1,0 +1,66 @@
+.buttonadd {
+    background-color: green;
+    color: white;
+  }
+.buttondel {
+    background-color: red;
+    color: white;
+  }
+
+  html {
+    height: 100%;
+    font-family: arial;
+      background-image: linear-gradient(blue, white);
+          }
+          .shad{
+              border: 1px solid;
+          padding: 50px;
+              box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          }
+          .roundcor{
+              border-radius: 25px;
+  }
+              #divElement{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%,-50%);
+          text-align:center;
+      }
+      #user_name{
+          padding-left: 20%;
+      }
+  
+      #password{
+          padding-left: 20%;
+      }
+      #user_name:hover {
+          border-color: orange;
+      }
+      #password:hover {
+          border-color: orange;
+      }
+
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th, td {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+        width:50%
+      }
+      tr:nth-child(even) {
+        background-color: Lightblue;
+    }
+    .seth{
+        height:50px;
+    }
+
+    .setw{
+        width:100%;
+    }

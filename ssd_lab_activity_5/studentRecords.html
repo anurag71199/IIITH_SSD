@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    <title>SSD-LAB5(Table)</title>
+    <script>
+        function addrow(){
+            var table = document.getElementById("mytable");
+            var newrow = table.insertRow();
+            var cell_1 = newrow.insertCell();
+            var cell_2 = newrow.insertCell();
+            cell_1.innerHTML = document.getElementById("rollno").value;
+            cell_2.innerHTML = document.getElementById("name").value;
+        } 
+        function delrow(){
+            document.getElementById("mytable").deleteRow(-1);
+        }
+    </script>
+</head>
+<body>
+
+    
+<div id='divElement'>
+    <h1 style="color: white">STUDENT RECORDS</h1>
+<input type="text" value="" class="seth" name="rollno" id="rollno" placeholder="Roll Number">
+<input type="text" value="" class="seth" name="name" id="name" placeholder="Name">
+<input type="button" value="Add Row" class="buttonadd seth" onclick="addrow()">
+<br><br>
+<table id="first row">
+    <tr class="buttonadd">
+        <th>Roll Number</th>
+        <th>Name</th> 
+    </tr>   
+</table>
+<table id="mytable">
+		<tr>
+		</tr>   
+</table>
+<br><br>
+<input type="button" class="buttondel seth" value="Delete" name="del" id="del" onclick="delrow()">
+
+</div>
+</body>
+</html> 
