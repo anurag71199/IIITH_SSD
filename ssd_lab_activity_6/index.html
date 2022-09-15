@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+        <title>SSD-LAB6 (index_page)</title>
+        
+    </head>
+<body>
+<h1 style="text-align:center">Hi</h1>
+    <div id='divElement'>
+<form name=details>
+    <!-- done -->
+    <label for="manager_name">Manager Name</label>
+    <input type="text" id="manager_name" name="manager_name" required><br><br>
+    <!-- done -->
+    <label for="email">Group Email</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="server_name">Server Username</label>
+    <input type="text" id="server_name" name="server_name" onkeyup="namevalidate(this)" required>
+    <div id="message">
+    <label for="server_name" id="capital" class="invalid">Invalid</p><br><br>
+</div>
+<br><br>
+
+    <label for="server_password">Server Password</label>
+    <input type="password" id="server_password" name="server_password"><br><br>
+
+    <label for="confirm_password">Confirm Password</label>
+    <input type="password" id="confirm_password" name="confirm_password" onfocusout="fofunc()"><br><br>
+
+    <!-- drop down team lead -->
+    <label for="team_lead">Team Lead:</label>
+    <select id="teaml_lead" name="team_lead">
+      <option value="Anurag">Anurag</option>
+      <option value="Roshni">Roshni</option>
+      <option value="Jinshu">Jinshu</option>
+    </select> 
+    <br><br>
+
+    <!-- drag box  -->
+    <div class="droptarget-div"
+            ondragenter= "ondragenterHandler(event)"
+            ondragover="dragoverHandler(event)"
+            ondrop="dropHandler(event)">
+
+         <p id="dragtarget-div"
+               ondragstart="dragstartHandler(event)"
+               ondrag="dragHandler(event)"
+               draggable="true">
+            Member 1
+          </p>
+          <p id="dragtarget-div"
+               ondragstart="dragstartHandler(event)"
+               ondrag="dragHandler(event)"
+               draggable="true">
+            Member 2
+          </p>
+          <p id="dragtarget-div"
+               ondragstart="dragstartHandler(event)"
+               ondrag="dragHandler(event)"
+               draggable="true">
+            Member 3
+          </p>
+
+      </div>
+
+      <!-- Drop Target 2 -->
+      <div class="droptarget-div"
+           ondragenter= "ondragenterHandler(event)"
+           ondragover="dragoverHandler(event)"
+           ondrop="dropHandler(event)">
+
+      </div>
+      <br><br>
+
+    <input type="submit" id="submit" value="submit" name="submit" style="width: 80px;" onclick="ValidateEmail()">
+    <!-- onclick="display()" -->
+  </form>
+</div>
+</body>
+</html> 
